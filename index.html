@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mossboss10 Photography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="container container--mobile container--inline" style="margin-bottom:2rem;">
+    <div class="glass-container glass-container--rounded glass-container--medium">
+      <div class="glass-filter"></div>
+      <div class="glass-overlay"></div>
+      <div class="glass-specular"></div>
+      <div class="glass-content">
+        <a class="glass-item glass-item--active" href="#">Home</a>
+        <a class="glass-item" href="#gallery">Gallery</a>
+        <a class="glass-item" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="container container--mobile">
+    <div class="glass-container glass-container--rounded glass-container--large">
+      <div class="glass-filter"></div>
+      <div class="glass-overlay"></div>
+      <div class="glass-specular"></div>
+      <div class="glass-content">
+        <div>
+          <h1 style="margin:0;font-size:2.5rem;color:#fb4268;">Mossboss10 Photography</h1>
+          <p style="margin:1rem 0 0; color:#444739; font-size:1.2rem;">Capturing moments in liquid glass.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Gallery Section -->
+  <main id="gallery" class="container container--mobile" style="margin-top:3rem;">
+    <h2 style="color:#fb4268;text-align:center;">Gallery</h2>
+    <div id="photoGrid" class="container container--inline" style="flex-wrap:wrap;gap:1.5rem;"></div>
+  </main>
+
+  <!-- Modal for photo details -->
+  <div id="photoModal" style="display:none; position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:1000;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);">
+    <div class="glass-container glass-container--rounded glass-container--large" style="max-width:700px;">
+      <div class="glass-filter"></div>
+      <div class="glass-overlay"></div>
+      <div class="glass-specular"></div>
+      <div class="glass-content" style="flex-direction:column;">
+        <img id="modalImg" src="" alt="" style="width:100%;border-radius:1rem;max-height:350px;object-fit:cover;">
+        <div style="margin-top:1rem;">
+          <h3 id="modalTitle" style="margin:0;"></h3>
+          <p id="modalDesc" style="margin:0.5rem 0 0;color:#444739;"></p>
+        </div>
+        <button onclick="closeModal()" style="margin-top:1rem;padding:0.6rem 1.2rem;border:none;border-radius:2rem;background:#fb4268;color:#fff;font-weight:bold;cursor:pointer;">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
